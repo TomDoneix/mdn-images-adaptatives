@@ -95,10 +95,26 @@
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
         <picture>
-          <source media="(max-width: 600px)" srcset="img/red-panda-600.webp"  />
-          <img src="img/red-panda-1200.webp" alt="red-panda" />
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://res.cloudinary.com/tomdoneix/image/upload/ar_1:1,c_thumb,g_face/q_auto/f_auto/red-panda_t9mcra.jpg 647w
+            "
+            sizes="100vw"
+          />
+          <img
+            sizes="(min-width: 1280px) 1200px, calc(93.75vw + 19px)"
+            srcset="
+              https://res.cloudinary.com/tomdoneix/image/upload/q_auto/c_scale,w_256/f_auto/red-panda_t9mcra.jpg   256w,
+              https://res.cloudinary.com/tomdoneix/image/upload/q_auto/c_scale,w_512/f_auto/red-panda_t9mcra.jpg   512w,
+              https://res.cloudinary.com/tomdoneix/image/upload/q_auto/c_scale,w_768/f_auto/red-panda_t9mcra.jpg   768w,
+              https://res.cloudinary.com/tomdoneix/image/upload/q_auto/c_scale,w_1024/f_auto/red-panda_t9mcra.jpg 1024w,
+              https://res.cloudinary.com/tomdoneix/image/upload/q_auto/c_scale,w_1280/f_auto/red-panda_t9mcra.jpg 1280w
+            "
+            src="https://res.cloudinary.com/tomdoneix/image/upload/q_auto/f_auto/red-panda_t9mcra.jpg"
+            alt="Petit Panda"
+          />
         </picture>
       </div>
     </main>
